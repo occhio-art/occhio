@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adèle Villemin Tarkovski · Casting et production</title>
+    <meta name="description" content="Adèle Villemin Tarkovski, casting et production. Basée à Paris et Marseille." />
+    <meta property="og:title" content="Adèle Villemin Tarkovski · Casting et production">
+    <meta property="og:description" content="Agente et productrice pour des marques de mode et de luxe, basée à Paris et Marseille.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adelevillemin.com/">
+    <meta property="og:image" content="https://adelevillemin.com/assets/og-image.png">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root { color-scheme: light dark; }
+      html, body { height: 100%; }
+      body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+      a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+    </style>
+  </head>
+  <body class="h-full bg-white text-neutral-900 antialiased selection:bg-neutral-900 selection:text-white">
+    <header class="fixed inset-x-0 top-0 z-10 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+        <a href="#" class="text-sm tracking-widest font-medium uppercase">Adèle Villemin Tarkovski</a>
+        <nav>
+          <a href="#contact" class="text-sm underline underline-offset-4 hover:no-underline focus:no-underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="h-full">
+      <section class="min-h-screen flex items-center">
+        <div class="mx-auto max-w-6xl px-4 w-full">
+          <div class="grid gap-6 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.05] font-medium uppercase">Adèle Villemin Tarkovski</h1>
+            <p class="text-base sm:text-lg md:text-xl text-neutral-700">Casting et production</p>
+            <p class="text-sm text-neutral-500">Basée à Paris et Marseille</p>
+            <div class="flex items-center justify-center gap-6 pt-2">
+              <a href="#contact" class="px-4 py-2 border border-neutral-900 rounded-full text-sm hover:bg-neutral-900 hover:text-white transition">Me contacter</a>
+              <a href="#apropos" class="text-sm underline underline-offset-4">À propos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="apropos" class="py-20 border-t border-neutral-200">
+        <div class="mx-auto max-w-3xl px-4">
+          <h2 class="text-xl font-medium uppercase tracking-widest mb-4">À propos</h2>
+          <p class="text-neutral-700 leading-relaxed">
+            Agente et productrice, je travaille pour des marques de mode et de luxe. J'accompagne campagnes et éditoriaux, du casting à la production, avec un réseau international de talents. Ce site est volontairement minimal, il présente l'essentiel et un moyen de contact direct.
+          </p>
+        </div>
+      </section>
+
+      <section id="services" class="py-20 border-t border-neutral-200">
+        <div class="mx-auto max-w-6xl px-4">
+          <h2 class="text-xl font-medium uppercase tracking-widest mb-10">Services</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="space-y-2">
+              <h3 class="font-medium">Casting</h3>
+              <p class="text-sm text-neutral-700">Direction de casting pour campagnes, défilés et éditoriaux.</p>
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-medium">Production</h3>
+              <p class="text-sm text-neutral-700">Préparation, équipes, budgets, repérages et logistique.</p>
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-medium">Art buying</h3>
+              <p class="text-sm text-neutral-700">Sourcing de talents, négociations, droits et suivis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-24 border-t border-neutral-200">
+        <div class="mx-auto max-w-3xl px-4">
+          <h2 class="text-xl font-medium uppercase tracking-widest mb-6">Contact</h2>
+          <div class="space-y-3 text-neutral-700">
+            <p>Écrivez-moi par email, je réponds rapidement.</p>
+            <p class="text-lg"><a class="underline underline-offset-4 hover:no-underline" href="mailto:hello@adelevillemin.com">hello@adelevillemin.com</a></p>
+            <p>Instagram : <a class="underline underline-offset-4 hover:no-underline" href="https://instagram.com/" target="_blank" rel="noopener">@votre.handle</a></p>
+            <p>LinkedIn : <a class="underline underline-offset-4 hover:no-underline" href="https://linkedin.com/in/" target="_blank" rel="noopener">linkedin.com/in/vous</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-neutral-200 py-6 text-center text-xs text-neutral-500">
+      <div class="mx-auto max-w-6xl px-4">
+        © <span id="year"></span> Adèle Villemin Tarkovski. Paris, Marseille.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
